@@ -19,3 +19,6 @@ ___
 
 - UV nutzen für Packet Management
 - Pipeline nutzen für Preprocessing und nutzen der Modelle
+
+
+1. Kaggle API erstellen, runterladen und im Root verzeichnis Packen
