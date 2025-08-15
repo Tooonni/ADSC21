@@ -22,3 +22,6 @@ ___
 
 
 1. Kaggle API erstellen, runterladen und im Root verzeichnis Packen
+https://www.kaggle.com/datasets/davidcariboo/player-scores
+https://www.kaggle.com/settings
+create new Token
