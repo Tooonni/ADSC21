@@ -1,4 +1,20 @@
-**Bestandteile des Analyseprojektes**
+# Schritte 
+- UV installieren
+    - ''uv sync'' um alle Pakete für das Projekt zu laden
+
+- Kaggle API erstellen, runterladen und im Root verzeichnis Packen
+    - Link zum Dataset: https://www.kaggle.com/datasets/davidcariboo/player-scores
+    - Link zum Erstellen eines API Tokens: https://www.kaggle.com/settings
+    - ''create new Token'' auswählen
+
+- get_data in /scripts ausführen, um alle daten zu bekommen
+
+- create_data im /scipts ausführen, um benötige daten für Dataframe zu erstellen
+
+# Bestandteile des Analyseprojektes
+
+ZIEL: Marktwert eines Spielers ermitteln, um am Ende Daten einzugeben und dann den Marktwert vom Spieler bekommen
+    Welche Features bestimmen den Marktwert eines Spielers? Gewichtung herausfinden (Regression)
 
 - Exploration eures Datensatzes inklusive aussagekräftiger Visualisierungen.
 
@@ -13,15 +29,16 @@ Transformation der Daten in geeigneten Pipelines.
 
 - Die Abgabe soll eine README zu Inhalten und Reproduktion beinhalten. Also wo was ist und wie man es nachmachen kann.
 
+# Über den Datensatz:
 
-___
+Clean, structured and automatically updated football data from Transfermarkt, including
 
+- 60,000+ games from many seasons on all major competitions
+- 400+ clubs from those competitions
+- 30,000+ players from those clubs
+- 400,000+ player market valuations historical records
+- 1,200,000+ player appearance records from all games
 
-- UV nutzen für Packet Management
-- Pipeline nutzen für Preprocessing und nutzen der Modelle
+and more
 
-
-1. Kaggle API erstellen, runterladen und im Root verzeichnis Packen
-https://www.kaggle.com/datasets/davidcariboo/player-scores
-https://www.kaggle.com/settings
-create new Token
+![ERM](src/data_diagram.svg)

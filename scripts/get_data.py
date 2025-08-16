@@ -5,7 +5,7 @@ from pathlib import Path
 # Projektwurzel relativ zu diesem Skript ermitteln
 project_root = Path(__file__).resolve().parents[1]
 data_dir = project_root / "data"
-kaggle_json_path = project_root / "kaggle.json"
+kaggle_json_path = project_root / "kaggle.json" #JSON Credentials für Kaggle API
 
 # 1) Nur wenn data/ nicht existiert, alles Weitere ausführen
 if not data_dir.exists():
