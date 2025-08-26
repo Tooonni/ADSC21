@@ -42,3 +42,35 @@ Clean, structured and automatically updated football data from Transfermarkt, in
 and more
 
 ![ERM](src/data_diagram.svg)
+
+# Auswertung
+
+- Bauen eines Datensets mit Zielvariable `market_value_in_eur` aus `players.csv`, weil dort die meisten Infos eines Spielers vorhanden ist
+
+- `transfers.csv`
+    - für jede `players_id` aus `players.csv` die Summe berechnen von `transfer_fee` hinzufügen (Summe von Transfergebühr eines Spielers)
+    - für jede `players_id` aus `players.csv` die Summe der Anzahl an Transfers berechnen und hinzufügen (Summe von Transfers eines Spielers)
+
+- `game_lineups.csv`
+    - für jede `players_id` aus `players.csv` die Summe einzelner `type` berechenen und hinzufügen
+    - für jede `players_id` aus `players.csv` die Summe von `teamcaptain` berechnen und hinzufügen
+    - für jede `players_id` aus `players.csv` die Summe von beiden `type` berechnene = Summe der Spiele
+
+- `clubs.csv`
+    - wird benötigt um herauszufinden wie viele Spiele ein Spieler pro gespielten Club gemacht hat aus `game_lineups.csv`
+
+- `appearances.csv`
+    - für jede `players_id` aus `players.csv` die Summe berechnen von `yellow_cards` und hinzufügen
+    - für jede `players_id` aus `players.csv` die Summe berechnen von `red_cards` und hinzufügen
+    - für jede `players_id` aus `players.csv` die Summe berechnen von `goals` und hinzufügen
+    - für jede `players_id` aus `players.csv` die Summe berechnen von `assists` und hinzufügen
+    - für jede `players_id` aus `players.csv` die Summe berechnen von `minutes_played` und hinzufügen
+
+- `competitions.csv`
+    - wird benötigt um herauszufinden wie viele Spiele ein Spieler pro gespiele Liga gemacht hat aus `appearances.csv`
+
+- ~~`games.csv` & `game_events.csv` & `club_games.csv`~~
+    - enhählt keine wichtige Infos für einen Spieler
+
+- ~~`player_valuations.csv`~~
+    - zu wenig Infos für einen Spieler (Dopplung von `players.csv`zum Teil)

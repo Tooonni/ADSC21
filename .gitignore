@@ -1,5 +1,5 @@
 /.venv/
 kaggle.json
-/data/
+/data/raw/
 .DS_Store
 /temp/
