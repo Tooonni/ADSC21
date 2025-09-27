@@ -5,18 +5,19 @@
 - Kaggle API erstellen, runterladen und im Root verzeichnis Packen
     - Link zum Dataset: https://www.kaggle.com/datasets/davidcariboo/player-scores
     - Link zum Erstellen eines API Tokens: https://www.kaggle.com/settings
-    - ''create new Token'' auswählen
+    - ''create new Token'' auswählen und in der ersten Ebene im Projektordner hinterlegen
 
-- get_data in /scripts ausführen, um alle daten zu bekommen
+- 0_get_data in /scripts ausführen, um alle daten zu bekommen
 
-- create_data im /scipts ausführen, um benötige daten für Dataframe zu erstellen
+- 1_create_data im /scipts ausführen, um benötige Daten für Dataframe zu erstellen
 
 # Bestandteile des Analyseprojektes
 
-ZIEL: Marktwert eines Spielers ermitteln, um am Ende Daten einzugeben und dann den Marktwert vom Spieler bekommen
-    Welche Features bestimmen den Marktwert eines Spielers? Gewichtung herausfinden (Regression)
+ZIEL: Marktwert eines Spielers ermitteln, um am Ende Daten einzugeben und dann den Marktwert vom Spieler bekommen.
 
-- Exploration eures Datensatzes inklusive aussagekräftiger Visualisierungen.
+- Welche Features bestimmen den Marktwert eines Spielers? Gewichtung herausfinden (Regression)
+
+- Exploration des Datensatzes inklusive aussagekräftiger Visualisierungen.
 
 - Erläuterung bzw. Ableitung aus der Exploration, welcher Wert vorhergesagt wird
 Transformation der Daten in geeigneten Pipelines.
@@ -43,7 +44,7 @@ and more
 
 ![ERM](src/data_diagram.svg)
 
-# Auswertung
+# Umwandlung die in 1_create_data passiert
 
 - Bauen eines Datensets mit Zielvariable `market_value_in_eur` aus `players.csv`, weil dort die meisten Infos eines Spielers vorhanden ist
 
